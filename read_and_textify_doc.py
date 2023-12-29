@@ -24,5 +24,5 @@ def read_and_textify(files: List[str]) -> Tuple[List[str], List[str]]:
             text = pageObj.extract_text()
             pageObj.clear()
             text_list.append(text)
-            sources_list.append(file.name + "_page_"+str(i))
+            sources_list.append(file.name + "_page_" + str(i))
     return text_list, sources_list
